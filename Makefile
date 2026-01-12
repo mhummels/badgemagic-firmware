@@ -141,6 +141,10 @@ ifeq ($(USBC_VERSION), 1)
 CFLAGS += -DUSBC_VERSION=$(USBC_VERSION)
 endif
 
+ifeq ($(NG_VERSION), 1)
+CFLAGS += -DNG_VERSION=$(NG_VERSION)
+endif
+
 CFLAGS += -DVERSION='"$(VERSION)"' -DVERSION_ABBR='"$(VERSION_ABBR)"'
 
 # Generate dependency information
